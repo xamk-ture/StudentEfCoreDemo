@@ -23,6 +23,12 @@ namespace StudentEfCoreDemo.Controllers
             return await _context.Students.ToListAsync();
         }
 
+        [HttpGet("Test")]
+        public async Task<string> GetStudentsDemo()
+        {
+            return "Test";
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {

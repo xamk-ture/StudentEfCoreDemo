@@ -29,5 +29,11 @@ namespace StudentEfCoreDemo.Controllers
             })
             .ToArray();
         }
+
+        //[HttpGet(Name = "WeatherTest")]
+        //public string GetTest()
+        //{
+        //    return "New version published to Azure";
+        //}
     }
 }
